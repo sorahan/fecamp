@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+
+strong {
+    color:blueviolet;
+    }
+    
+
+selector:pseudo-class{
+    property:value;
+}
+
+.front {
+    color:green;
+}
+
+#end {
+    font-weight: bold;
+}
+
+a:link {
+    color:fuchsia;
+}
+
+a:hover {
+    color: red;
+}
+
+a:visited {
+    color:rgba(255,0,0,0.1)
+}
+
+a:active {
+    color: yellow;
+}
+
