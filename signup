@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        strong {
+            color: green;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Signup</h1>
+    <form action="index.html" method="post">
+    
+        <fieldset>
+            <legend>필수입력정보</legend>
+            <p>
+                <label>
+                    email <input type="email" name="email" size="20">
+                </label>
+            </p>
+            <p>
+                <label for="password">password</label>
+                <input type="password" id="password">
+            </p>
+            <p>
+                password check <input type="password" name="password">
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>선택입력정보</legend>
+            <P>
+                전화번호 <select name="phone1">
+                    <option value="010">010</option>
+                    <option value="02">02</option>
+                    <option value="032">032</option>
+                    <option value="070">070</option>
+                </select>
+                <input type="text" name="phone2" size="6" maxlength="4">
+                <input type="text" name="phone3" size="6" maxlength="4">
+            </P>
+            <P>
+               생년월일 <input type="date" name="birth">
+            </P>
+            
+        </fieldset>
+        <button type="submet">가입완료</button>
+        <button type="reset">처음으로</button>
+    </form>
+
+<div>111</div>
+<div>222</div>
+</body>
+</html>
+
+<p><label></label></p>
+td 나 tr등의 태그를 사용할 때, label for-id 를 사용해서 연결함
+
+inline tag : text처럼 하나의 라인에서 input-input-input 됨
+block tag
+inline-block tag 
+
+<span>콘텐츠를 묶음 (인라인 단위)
+    <div>콘텐츠를 묶음 (block 단위)
