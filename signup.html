@@ -38,20 +38,25 @@
         <br>
         <fieldset>
             <legend>선택입력정보</legend>
-            <P>
-                전화번호 <select name="phone1">
-                    <option value="010">010</option>
-                    <option value="02">02</option>
-                    <option value="032">032</option>
-                    <option value="070">070</option>
-                </select>
-                <input type="tel" name="phone2" size="6" maxlength="4">
-                <input type="tel" name="phone3" size="6" maxlength="4">
-            </P>
-            <P>
-               생년월일 <input type="date" name="birth">
-            </P>
-            
+                <table>
+                    <tr>
+                        <td><label for="phone">전화번호</label></td>
+                        <td><select name="phone1">
+                            <option value="010">010</option>
+                            <option value="02">02</option>
+                            <option value="032">032</option>
+                            <option value="070">070</option>
+                            </select>
+                            <input type="tel" id="phone" name="phone2" size="6" maxlength="4">
+                            <input type="tel" id="phone" name="phone3" size="6" maxlength="4">
+                        </td>
+                    </tr>
+                    <tr>               
+                        <td><label for="birth">생년월일</label></td>
+                        <td><input type="date" id="birth" name="birth"></td>
+                    </tr>
+
+            </table>
         </fieldset>
         <button type="submet">가입완료</button>
         <button type="reset">처음으로</button>
