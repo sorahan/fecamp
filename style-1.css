@@ -11,9 +11,10 @@ selector:pseudo-class{
 }
 
 .front {
-    border-color: #00f;
+    border-color: #ff11ff;
     border-style: solid;
     border-width: 1px;
+    color:blue;
 }
 
 #end {
