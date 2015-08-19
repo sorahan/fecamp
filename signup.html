@@ -8,7 +8,7 @@
             color: green;
         }
     </style>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-1.css">
 </head>
 <body>
 
@@ -19,41 +19,58 @@
             <legend>필수입력정보</legend>
                 <table>
                     <tr>
-                        <td><label for="email">email</label></td>
-                        <td><input type="email" id="email" size="20"></td>
+                        <td>
+                            <label for="email">email</label>
+                        </td>
+                        <td>
+                            <input type="email" id="email" size="20">
+                        </td>
                     </tr> 
                     
                     <tr>
-                        <td><label for="password">password</label></td>
+                        <td>
+                            <label for="password">password</label>
+                        </td>
                         <td><input type="password" id="password" size="20"></td>
                     </tr> 
                     
                     <tr>
-                        <td><label for="passwordch">password check </label></td>
-                        <td><input type="password" id="passwordch" size="20"></td>
+                        <td>
+                            <label for="passwordch">password check </label>
+                        </td>
+                        <td>
+                            <input type="password" id="passwordch" size="20">
+                        </td>
                     </tr> 
                     
             </table>
         </fieldset>
-        <br>
+        
         <fieldset>
             <legend>선택입력정보</legend>
                 <table>
                     <tr>
-                        <td><label for="phone">전화번호</label></td>
-                        <td><select name="phone1">
+                        <td>
+                            <label for="phone">전화번호</label>
+                        </td>
+                        <td>
+                            <select name="phone1" id="phone">
                             <option value="010">010</option>
                             <option value="02">02</option>
                             <option value="032">032</option>
                             <option value="070">070</option>
                             </select>
-                            <input type="tel" id="phone" name="phone2" size="6" maxlength="4">
-                            <input type="tel" id="phone" name="phone3" size="6" maxlength="4">
+                            <input type="tel" name="phone2" size="6" maxlength="4">
+                            <input type="tel" name="phone3" size="6" maxlength="4">
                         </td>
                     </tr>
                     <tr>               
-                        <td><label for="birth">생년월일</label></td>
-                        <td><input type="date" id="birth" name="birth"></td>
+                        <td>
+                            <label for="birth">생년월일</label>
+                        </td>
+                        <td>
+                            <input type="date" id="birth" name="birth">
+                        </td>
                     </tr>
 
             </table>
@@ -63,3 +80,8 @@
     </form>
 </body>
 </html>
+
+css 는 세가지 방법
+1)인라인에서 바로 적용
+2)style tag를 상단에
+3)css를 링크

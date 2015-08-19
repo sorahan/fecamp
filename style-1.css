@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+
+strong {
+    color:blueviolet;
+    }
+    
+
+selector:pseudo-class{
+    property:value;
+}
+
+.front {
+    border-color: #00f;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#end {
+    background-color: rgba(0,100,0,1);
+}
+
+
