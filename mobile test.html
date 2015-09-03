@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>모바일 해상도 테스트</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalabe=yes">
+    
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .box {
+            width: 100%;
+            height: 100px;
+            background-color: #000;
+        }
+        
+        .half {
+            width: 160px;
+        }
+        
+    </style>
+    
+    </head>
+    
+    <body>
+        <div class="box" onclick="alert(this.offsetwidth);"></div>
+        <div class="box half"></div>
+    
+    </body>
+</html>
