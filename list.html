@@ -2,31 +2,120 @@
 <html>
 <head>
     <title>모바일 해상도 </title>
-    <meta class>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+    <style>
+        /* common css  (reset css)*/
+        body {
+            margin: 0;
+        }
+        
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /*상품 목록 */
+        .shopping_list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            
+            padding: 0 5px;
+        }
+    
+        .shopping_item {
+        /*    float: left;
+            width: 33.3%; /* 몇단? */
+            /* box-sizing: border-box; */    
+            background-color: #00f;
+        }
+        
+        .thumb {
+            height: 200px;
+            background-color: #000;
+            border: 1px solid #000;
+            background-image: url(img/la.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+        
+        .ellipsis {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .shopping_item .box {
+            padding: 0 5px;
+        }
+        
+        @media screen and (min-width:600px) {
+            .shopping_item {
+                float: left;
+                width: 50%;
+            }
+            
+        }
+        
+        
+        @media screen and (min-width:700px) {
+            .shopping_item {
+                width: 33.3%;
+            }
+            
+        }
+        
+        
+        @media screen and (min-width:800px) {
+            .shopping_item {
+                width: 25%;
+            }
+            
+        }
+        
+        @media screen and (orientation : landscape) {
+            .thumb {
+                height: 100px;
+        }
+        
+        
+    </style>
     </head>
     
     <body>
     
-        <ul>
-            <li>
-                <div><img src="이미지경로"></div>
-                <p>상품명</p>
-            
+        <ul class="shopping_list">
+            <li class="shopping_item">
+                <div class="box">
+                <div class="thumb"></div>
+                <p class="ellipsis">productroductroductroductroductroductroductroductroduct</p>
+            </div>
             </li>
-            <li>
-                <div><img src="이미지경로"></div>
-                <p>상품명</p>
-            
+            <li class="shopping_item">
+                <div class="box">
+                <div class="thumb"></div>
+                <p>product1</p>
+            </div>
             </li>
-            <li>
-                <div><img src="이미지경로"></div>
-                <p>상품명</p>
             
+            <li class="shopping_item">
+                <div class="box">
+                <div class="thumb"></div>
+                <p>product1</p>
+            </div>
             </li>
-            <li>
-                <div><img src="이미지경로"></div>
-                <p>상품명</p>
-            
+            <li class="shopping_item">
+                <div class="box">
+                <div class="thumb"></div>
+                <p>product1</p>
+            </div>
+            </li>
+            <li class="shopping_item">
+                <div class="box">
+                <div class="thumb"></div>
+                <p>product1</p>
+            </div>
             </li>
         
         </ul>
