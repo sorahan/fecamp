@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>애니메이션</title>
+    <meta charset="utf-8">
+    <script src = "http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+    jQuery(function($){
+    
+        $('#box').on('mousedown', function(event){
+            var top = parseInt($(this).css('top')), left = parseInt($(this).css('left'));
+            var startX=event.pageX, startY=event.pageY;
+            var $box = $(this);
+            
+            event.preventDefault();
+            
+            $(document).on('mousemove.drag', function(event){
+                var dx = event.pageX-startX, dy = event.pageY-startY;
+                var newTop = top +dy, newLeft = left + dx;
+                $box.css({top:newTop, left:newLeft});
+                
+            });
+            
+            $(document).on('mouseup', function(event){
+                $(this).off('mousemove.drag mouseup.drag');
+            });
+                       
+        });
+        
+    });
+    </script>
+    <style>
+        #box {
+            position: absolute;
+            top:10px;
+            left: 10px;
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
+        
+        button {
+            position : absolute;
+            top: 120px;
+            left: 120px;
+            font-size:16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <button>stopsign</button>
+    
+</html>
